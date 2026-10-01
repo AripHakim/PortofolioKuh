@@ -14,6 +14,7 @@ function ThemeProvider({
       enableSystem
       disableTransitionOnChange
       {...props}
+      scriptProps={{ type: "application/json" }}
     >
       <ThemeHotkey />
       {children}
