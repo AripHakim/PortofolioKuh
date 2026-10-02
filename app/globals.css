@@ -64,7 +64,7 @@
     --background: hsl(290, 100%, 95%);
     --foreground: oklch(0% 0 0);
     --shadow: 2px 2px 0px 0px var(--border);
-
+    color-scheme: light;
 }
 
 @layer base {
@@ -94,4 +94,14 @@
   .scrollbar {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
     }
+}
+
+html,
+body {
+  width: 100%;
+  min-width: 0;
+}
+
+body {
+  overflow-x: clip;
 }

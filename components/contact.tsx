@@ -4,15 +4,15 @@ import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa"
 
 export function Contact() {
   return (
-    <section id="contact" className="relative px-6 py-24">
+    <section id="contact" className="relative px-6 py-12 mb-12">
       <div className="mx-auto w-full max-w-7xl">
         {/* HEADER */}
         <div className="mb-12">
           <div className="mb-6 inline-flex border-2 border-black bg-[#F7BF18] px-4 py-2 font-mono text-sm font-bold shadow-[4px_4px_0_#000]">
-            #05-CONTACT
+            #04-CONTACT
           </div>
 
-          <h2 className="max-w-5xl text-6xl leading-[0.85] font-black tracking-tighter uppercase sm:text-7xl lg:text-9xl">
+          <h2 className="max-w-5xl text-5xl lg:text-6xl leading-[0.85] font-black tracking-tighter uppercase sm:text-7xl lg:text-9xl">
             LET&apos;S
             <br />
             MAKE

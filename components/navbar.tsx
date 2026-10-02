@@ -20,7 +20,7 @@ const navItems = [
 
 export function Navbar() {
   return (
-    <div className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2">
+    <div className="fixed bottom-8 left-1/2 z-50 -translate-x-1/2 lg:bottom-6">
       <NavigationMenu className="rounded-xl border-4 border-black p-2 shadow-[0px_6px_0px_#000]">
         <NavigationMenuList className="gap-2">
           {navItems.map(({ href, label, icon: Icon }) => (
@@ -29,7 +29,7 @@ export function Navbar() {
                 href={href}
                 aria-label={label}
                 title={label}
-                className="flex size-12 items-center justify-center rounded-lg transition-all hover:-translate-y-1 hover:border-2 hover:border-black hover:bg-[#F7BF18] active:translate-y-0 active:shadow-none"
+                className="flex size-8 lg:size-12 items-center justify-center rounded-lg transition-all hover:-translate-y-1 hover:border-2 hover:border-black hover:bg-[#F7BF18] active:translate-y-0 active:shadow-none"
               >
                 <Icon size={22} strokeWidth={2.5} />
               </Link>

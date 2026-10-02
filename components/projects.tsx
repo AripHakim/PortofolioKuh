@@ -51,15 +51,15 @@ export function Projects() {
   }, [api])
 
   return (
-    <section id="projects" className="relative px-6 py-24">
+    <section id="projects" className="relative px-6 py-12">
       <div className="mx-auto w-full max-w-7xl">
         {/* HEADER */}
         <div className="mb-12">
           <div className="mb-6 inline-flex border-2 border-black bg-[#F7BF18] px-4 py-2 font-mono text-sm font-bold shadow-[4px_4px_0_#000]">
-            #04-PROJECTS
+            #03-PROJECTS
           </div>
 
-          <h2 className="max-w-5xl text-6xl leading-[0.85] font-black tracking-tighter uppercase sm:text-7xl lg:text-9xl">
+          <h2 className="max-w-5xl text-5xl lg:text-6xl leading-[0.85] font-black tracking-tighter uppercase sm:text-7xl lg:text-9xl">
             THINGS
             <br />
             <span className="text-[#EC1F24]">I&apos;VE BUILT.</span>
@@ -71,7 +71,7 @@ export function Projects() {
           <Carousel
             setApi={setApi}
             opts={{
-              loop: false,
+              loop: true,
             }}
             className="w-full"
           >
@@ -85,10 +85,15 @@ export function Projects() {
                       caption={
                         <div>
                           {/* TITLE */}
-                          <div className="flex items-start justify-between gap-6">
-                            <h3 className="text-lg leading-tight font-black uppercase sm:text-xl">
+                          <div className="flex items-start gap-4">
+                            <span
+                                className="border-2 border-black bg-[#F7BF18] px-3 py-1 font-mono text-lg font-bold shadow-[2px_2px_0_#000]"
+                              >
+                              #{project.number} - {project.title}
+                              </span>
+                            {/* <h3 className="text-lg leading-tight font-black uppercase sm:text-xl">
                               {project.title}
-                            </h3>
+                            </h3> */}
                           </div>
 
                           {/* TAGS */}
@@ -125,19 +130,25 @@ export function Projects() {
                         </div>
                       }
                     />
-
-                    {/* PROJECT NUMBER */}
-                    <div className="absolute top-6 left-6 z-10 border-2 border-black bg-white px-4 py-2 font-mono text-sm font-black shadow-[4px_4px_0_#000]">
-                      {project.number} / {projects.length}
-                    </div>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
 
-            <CarouselPrevious className="left-6 size-12 border-2 border-black bg-white text-black hover:bg-[#F7BF18]" />
+            <CarouselPrevious className="
+            size-8 lg:size-12 
+            border-2 border-black bg-white text-black 
+            hover:bg-[#F7BF18]
+            top-1/2 right-auto left-6 bottom-auto
+            "
+            
+            />
 
-            <CarouselNext className="right-6 size-12 border-2 border-black bg-white text-black hover:bg-[#F7BF18]" />
+            <CarouselNext className=" 
+            top-1/2 right-6 bottom-auto
+            size-8 lg:size-12 
+            border-2 border-black bg-white text-black 
+            hover:bg-[#F7BF18]" />
           </Carousel>
         </div>
       </div>
