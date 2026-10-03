@@ -91,9 +91,6 @@ export function Projects() {
                               >
                               #{project.number} - {project.title}
                               </span>
-                            {/* <h3 className="text-lg leading-tight font-black uppercase sm:text-xl">
-                              {project.title}
-                            </h3> */}
                           </div>
 
                           {/* TAGS */}

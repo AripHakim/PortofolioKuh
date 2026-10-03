@@ -1,3 +1,6 @@
+"use client"
+
+import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import type { ReactNode } from "react"
 
@@ -7,7 +10,19 @@ type Props = {
   className?: string
 }
 
-export default function ImageCard({ imageUrl, caption, className }: Props) {
+export default function ImageCard({
+  imageUrl,
+  caption,
+  className,
+}: Props) {
+  const pathname = usePathname()
+
+  const basePath = pathname.startsWith("/PortofolioKuh")
+    ? "/PortofolioKuh"
+    : ""
+
+  const imageSrc = `${basePath}${imageUrl}`
+
   return (
     <figure
       className={cn(
@@ -17,9 +32,10 @@ export default function ImageCard({ imageUrl, caption, className }: Props) {
     >
       <img
         className="aspect-16/9 w-full object-fill"
-        src={imageUrl}
+        src={imageSrc}
         alt="image"
       />
+
       <figcaption className="border-t-2 border-border p-4 text-foreground">
         {caption}
       </figcaption>
