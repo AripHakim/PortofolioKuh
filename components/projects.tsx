@@ -17,7 +17,7 @@ const projects = [
   {
     number: "01",
     title: "Website Profile - LPK MALEO GOGAKUIN",
-    imageUrl: "/projects/lpk-maleo.png",
+    imageUrl: "projects/lpk-maleo.png",
     tags: ["React", "TypeScript", "Tailwind CSS"],
     link: "https://maleogogakuin.vercel.app/",
     repo: "https://github.com/AripHakim/LPK-MGP",
@@ -25,7 +25,7 @@ const projects = [
   {
     number: "02",
     title: "TV Information Display - LPK SEKAI MIRAI CEMERLANG",
-    imageUrl: "/projects/tv-dashboard.png",
+    imageUrl: "projects/tv-dashboard.png",
     tags: ["React", "TypeScript", "Tailwind CSS"],
     link: "https://tv-dashboard-sekaimirai.vercel.app/",
     repo: "https://github.com/lpk-sekai-mirai/TVDashboard",
