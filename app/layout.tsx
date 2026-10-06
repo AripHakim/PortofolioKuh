@@ -5,7 +5,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
-  title: "Arief Rahman Hakim - Portofolio",
+  title: "Portofolio Arip",
   description: "Website Portofolio Sederhana menggunakan Next.JS."
 }
 
@@ -35,7 +35,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased`}
     >
-      <body>
+      <body className="grid-background">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

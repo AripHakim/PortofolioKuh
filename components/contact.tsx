@@ -8,7 +8,7 @@ export function Contact() {
       <div className="mx-auto w-full max-w-7xl">
         {/* HEADER */}
         <div className="mb-12">
-          <div className="mb-6 inline-flex border-2 border-black bg-[#F7BF18] px-4 py-2 font-mono text-sm font-bold shadow-[4px_4px_0_#000]">
+          <div className="mb-6 inline-flex border-2 border-black bg-chart-2 text-black px-4 py-2 font-mono text-sm font-bold shadow-[4px_4px_0_#000]">
             #04-CONTACT
           </div>
 
@@ -17,14 +17,14 @@ export function Contact() {
             <br />
             MAKE
             <br />
-            <span className="text-[#EC1F24]">SOMETHING.</span>
+            <span className="text-chart-4">SOMETHING.</span>
           </h2>
         </div>
 
         {/* CONTACT CARD */}
         <div className="grid gap-8 lg:grid-cols-[1.4fr_0.6fr]">
           {/* MAIN CTA */}
-          <div className="border-[3px] border-black bg-white p-8 shadow-[8px_8px_0_#000] sm:p-12">
+          <div className="border-[3px] text-black border-black bg-white p-8 shadow-[8px_8px_0_#000] sm:p-12">
             <p className="max-w-2xl text-2xl leading-tight font-black uppercase sm:text-3xl">
               Got an idea, project, or just want to say hello?
             </p>
@@ -39,7 +39,7 @@ export function Contact() {
               <Link
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=arief.rahman0123@gmail.com"
                 target="_blank"
-                className="inline-flex items-center gap-3 border-[3px] border-black bg-[#EC1F24] px-6 py-4 font-mono text-sm font-black text-white shadow-[5px_5px_0_#000] transition-all duration-150 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[1px_1px_0_#000]"
+                className="inline-flex items-center gap-3 border-[3px] border-black bg-chart-4 px-6 py-4 font-mono text-sm font-black text-white shadow-[5px_5px_0_#000] transition-all duration-150 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[1px_1px_0_#000]"
               >
                 <Mail size={24} strokeWidth={2.5} />
                 Email me
@@ -60,7 +60,7 @@ export function Contact() {
           </div>
 
           {/* SOCIAL LINKS */}
-          <div className="border-[3px] border-black bg-[#F7BF18] p-8 shadow-[8px_8px_0_#000]">
+          <div className="border-[3px] text-black border-black bg-chart-2 p-8 shadow-[8px_8px_0_#000]">
             <p className="mb-6 font-mono text-sm font-black">FIND ME ONLINE</p>
 
             <div className="flex flex-col gap-3">
@@ -110,7 +110,7 @@ export function Contact() {
         </div>
 
         {/* FOOTER TEXT */}
-        <div className="mt-16 flex flex-col justify-between gap-4 border-t-[3px] border-black pt-6 font-mono text-xs font-bold sm:flex-row">
+        <div className="mt-16 flex flex-col justify-between gap-4 border-t-[3px]  pt-6 font-mono text-xs font-bold sm:flex-row">
           <span>ARIEF RAHMAN HAKIM © 2026</span>
           <span>BUILT WITH NEXT.JS + TAILWIND CSS</span>
         </div>

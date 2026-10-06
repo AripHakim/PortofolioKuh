@@ -64,6 +64,7 @@
     --background: hsl(290, 100%, 95%);
     --foreground: oklch(0% 0 0);
     --shadow: 2px 2px 0px 0px var(--border);
+    --grid-line: rgb(0 0 0 / 8%);
     /* color-scheme: light; */
 }
 
@@ -104,4 +105,71 @@ body {
 
 body {
   overflow-x: clip;
+}
+
+
+/* Grid background */
+/* .grid-background {
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(0 0 0 / 8%) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgb(0 0 0 / 8%) 1px,
+      transparent 1px
+    );
+  background-size: 40px 40px;
+} */
+
+
+.grid-background {
+  background-color: var(--background);
+  background-image:
+    linear-gradient(
+      to right,
+      var(--grid-line) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--grid-line) 1px,
+      transparent 1px
+    );
+  background-size: 40px 40px;
+}
+
+
+
+.dark {
+  --secondary-background: oklch(22% 0 0);
+  --background: oklch(16% 0 0);
+  --foreground: oklch(98% 0 0);
+
+  --main: hsl(291, 100%, 71%);
+  --main-foreground: oklch(0% 0 0);
+
+  --border: oklch(98% 0 0);
+  --ring: oklch(98% 0 0);
+  --overlay: oklch(0% 0 0 / 0.8);
+
+  --grid-line: rgb(255 255 255 / 8%);
+}
+
+
+/* Dark mode */
+.dark .grid-background {
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(255 255 255 / 8%) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 8%) 1px,
+      transparent 1px
+    );
 }
