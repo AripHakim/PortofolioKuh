@@ -17,7 +17,7 @@ const projects = [
   {
     number: "01",
     title: "Website Profile - LPK MALEO GOGAKUIN",
-    imageUrl: "projects/lpk-maleo.png",
+    imageUrl: "projects/lpk-maleo.webp",
     tags: ["React", "TypeScript", "Tailwind CSS"],
     link: "https://maleogogakuin.vercel.app/",
     repo: "https://github.com/AripHakim/LPK-MGP",
@@ -25,7 +25,7 @@ const projects = [
   {
     number: "02",
     title: "TV Information Display - LPK SEKAI MIRAI CEMERLANG",
-    imageUrl: "projects/tv-dashboard.png",
+    imageUrl: "projects/tv-dashboard.webp",
     tags: ["React", "TypeScript", "Tailwind CSS"],
     link: "https://tv-dashboard-sekaimirai.vercel.app/",
     repo: "https://github.com/lpk-sekai-mirai/TVDashboard",
@@ -53,7 +53,6 @@ export function Projects() {
   return (
     <section id="projects" className="relative px-6 py-12">
       <div className="mx-auto w-full max-w-7xl">
-        {/* HEADER */}
         <div className="mb-12">
           <div className="mb-6 inline-flex border-2 border-black bg-[#F7BF18] px-4 py-2 font-mono text-sm font-bold shadow-[4px_4px_0_#000]">
             #03-PROJECTS
@@ -73,7 +72,7 @@ export function Projects() {
             opts={{
               loop: true,
             }}
-            className="w-full"
+            className="w-full" 
           >
             <CarouselContent>
               {projects.map((project) => (

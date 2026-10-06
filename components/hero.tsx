@@ -1,6 +1,9 @@
+// import logo from "logo.webp"
+import ImageCard from "@/components/ui/image-card"
+
 export function Hero() {
   return (
-    <section className="relative flex min-h-svh w-full min-w-0 items-center px-4 py-8 sm:px-6 sm:py-24 ">
+    <section id="home" className="relative flex min-h-svh w-full min-w-0 items-center px-4 py-8 sm:px-6 sm:py-24 ">
       <div className="mx-auto grid w-full max-w-7xl gap-8 items-center lg:grid-cols-[1.4fr_0.6fr] lg:items-center lg:gap-12">
         {/* LEFT */}
         <div>
@@ -43,15 +46,17 @@ export function Hero() {
           <div className="aspect-square w-full border-4 border-black bg-[#F7BF18] shadow-[8px_8px_0_#000] sm:shadow-[10px_10px_0_#000]">
             <div className="flex h-full items-center justify-center p-6 sm:p-8">
               <span className="text-center text-5xl leading-none font-black uppercase sm:text-6xl">
-                ARIP R
+                ARIEF RAHMAN
                 <br />
                 HAKIM
               </span>
             </div>
           </div>
 
-          <div className="absolute -top-4 -right-3 flex size-16 rotate-12 items-center justify-center rounded-full border-4 border-black bg-[#EC1F24] p-2 text-center text-[10px] leading-tight font-black text-white sm:-top-5 sm:-right-5 sm:size-20 sm:text-xs">
-            HELLO WORLD!
+          <div className="absolute -top-4 -right-3 flex size-16 rotate-12 items-center justify-center rounded-full border-2 bg-[#EC1F24] text-center text-[10px] leading-tight font-black text-white sm:-top-5 sm:-right-5 sm:size-20 sm:text-xs">
+            {/* HELLO WORLD! */}
+            <img src="logo.webp" alt="Logo" className="bg-black rounded-full" />
+            
           </div>
         </div>
       </div>

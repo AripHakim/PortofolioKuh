@@ -64,7 +64,7 @@
     --background: hsl(290, 100%, 95%);
     --foreground: oklch(0% 0 0);
     --shadow: 2px 2px 0px 0px var(--border);
-    color-scheme: light;
+    /* color-scheme: light; */
 }
 
 @layer base {
