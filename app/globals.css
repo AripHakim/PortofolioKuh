@@ -107,24 +107,6 @@ body {
   overflow-x: clip;
 }
 
-
-/* Grid background */
-/* .grid-background {
-  background-image:
-    linear-gradient(
-      to right,
-      rgb(0 0 0 / 8%) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      to bottom,
-      rgb(0 0 0 / 8%) 1px,
-      transparent 1px
-    );
-  background-size: 40px 40px;
-} */
-
-
 .grid-background {
   background-color: var(--background);
   background-image:
@@ -140,8 +122,6 @@ body {
     );
   background-size: 40px 40px;
 }
-
-
 
 .dark {
   --secondary-background: oklch(22% 0 0);

@@ -32,7 +32,7 @@ export function About() {
     <section id="about" className="relative px-6 py-12 ">
       <div className="mx-auto w-full max-w-7xl">
         <div className="mb-12">
-          <div className="mb-6 inline-flex border-2 text-black border-black bg-chart-2 px-4 py-2 font-mono text-sm font-bold shadow-[4px_4px_0_#000]">
+          <div className="mb-6 inline-flex border-2 text-black border-black bg-chart-2 px-4 py-2 font-mono text-sm font-bold shadow-[4px_4px_0_var(--border)]">
             #02-ABOUT ME
           </div>
 
@@ -44,7 +44,7 @@ export function About() {
         </div>
 
         <div className="grid text-black min-w-0 gap-8 lg:grid-cols-2 lg:items-stretch">
-          <div className="flex w-full min-w-0 flex-col items-center border-[3px] border-black bg-white px-2 py-16 lg:px-4 lg:py-28  text-center shadow-[8px_8px_0_#000]">
+          <div className="flex w-full min-w-0 flex-col items-center border-[3px] border-black bg-white px-2 py-16 lg:px-4 lg:py-28  text-center shadow-[8px_8px_0_var(--border)]">
             <p className="text-xl lg:text-2xl leading-tight font-black uppercase">
               I&apos;m a frontend developer who enjoys turning ideas into
               interfaces.
@@ -59,7 +59,7 @@ export function About() {
 
           <Carousel
             setApi={setApi}
-            className="relative min-w-0 w-full shadow-[8px_8px_0_#000]"
+            className="relative min-w-0 w-full shadow-[8px_8px_0_var(--border)]"
             opts={{
               loop: true,
             }}
@@ -131,7 +131,7 @@ export function About() {
         </div>
         <div className="mt-16">
           <div className="mb-6 text-black flex items-center gap-4">
-            <div className="mr-3 inline-flex border-2 border-black bg-chart-2 px-4 py-2 font-mono text-sm font-bold shadow-[4px_4px_0_#000]">
+            <div className="mr-3 inline-flex border-2 border-black bg-chart-2 px-4 py-2 font-mono text-sm font-bold shadow-[4px_4px_0_var(--border)]">
               SKILLS
             </div>
             <div className="flex flex-wrap gap-3">
@@ -148,7 +148,7 @@ export function About() {
               ].map((skill) => (
                 <span
                   key={skill}
-                  className="border-2 border-black bg-white px-4 py-2 font-mono text-sm font-bold shadow-[3px_3px_0_#000] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-chart-2 hover:shadow-none"
+                  className="border-2 border-black bg-white px-4 py-2 font-mono text-sm font-bold shadow-[3px_3px_0_var(--border)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-chart-2 hover:shadow-none"
                 >
                   {skill}
                 </span>

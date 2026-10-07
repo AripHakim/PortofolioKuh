@@ -1,4 +1,3 @@
-
 "use client"
 
 import Link from "next/link"
@@ -37,12 +36,22 @@ export function Navbar() {
 
   const isDark = resolvedTheme === "dark"
 
+  const itemClassName = `
+    flex size-8 items-center justify-center rounded-lg
+    !text-black transition-all
+    hover:-translate-y-1 hover:border-2
+    hover:border-black hover:bg-[#E8CCF5]
+    active:translate-y-0 active:shadow-none
+    lg:size-12
+  `
+
   return (
     <div className="fixed bottom-8 left-1/2 z-50 -translate-x-1/2 lg:bottom-6">
       <NavigationMenu
         className="
-          rounded-xl border-4 border-border
-          bg-background p-2
+          rounded-xl border-4 border-black
+          !bg-[#F5E6FF] !text-black
+          p-2
           shadow-[0px_6px_0px_var(--border)]
         "
       >
@@ -53,16 +62,13 @@ export function Navbar() {
                 href={href}
                 aria-label={label}
                 title={label}
-                className="
-                  flex size-8 items-center justify-center rounded-lg
-                  text-foreground transition-all
-                  hover:-translate-y-1 hover:border-2
-                  hover:border-border hover:bg-chart-2
-                  active:translate-y-0 active:shadow-none
-                  lg:size-12
-                "
+                className={itemClassName}
               >
-                <Icon size={22} strokeWidth={2.5} />
+                <Icon
+                  size={22}
+                  strokeWidth={2.5}
+                  className="!text-black"
+                />
               </Link>
             </NavigationMenuItem>
           ))}
@@ -76,15 +82,7 @@ export function Navbar() {
               title={isDark ? "Light mode" : "Dark mode"}
               disabled={!mounted}
               onClick={() => setTheme(isDark ? "light" : "dark")}
-              className="
-                flex size-8 items-center justify-center rounded-lg
-                text-foreground transition-all
-                hover:-translate-y-1 hover:border-2
-                hover:border-border hover:bg-chart-2
-                active:translate-y-0 active:shadow-none
-                disabled:opacity-50
-                lg:size-12
-              "
+              className={itemClassName}
             >
               {!mounted ? (
                 <Moon size={22} strokeWidth={2.5} />

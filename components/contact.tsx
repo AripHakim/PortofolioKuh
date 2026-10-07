@@ -6,9 +6,8 @@ export function Contact() {
   return (
     <section id="contact" className="relative px-6 py-12 mb-12">
       <div className="mx-auto w-full max-w-7xl">
-        {/* HEADER */}
         <div className="mb-12">
-          <div className="mb-6 inline-flex border-2 border-black bg-chart-2 text-black px-4 py-2 font-mono text-sm font-bold shadow-[4px_4px_0_#000]">
+          <div className="mb-6 inline-flex border-2 border-black bg-chart-2 text-black px-4 py-2 font-mono text-sm font-bold shadow-[4px_4px_0_var(--border)]">
             #04-CONTACT
           </div>
 
@@ -21,10 +20,8 @@ export function Contact() {
           </h2>
         </div>
 
-        {/* CONTACT CARD */}
         <div className="grid gap-8 lg:grid-cols-[1.4fr_0.6fr]">
-          {/* MAIN CTA */}
-          <div className="border-[3px] text-black border-black bg-white p-8 shadow-[8px_8px_0_#000] sm:p-12">
+          <div className="border-[3px] text-black border-black bg-white p-8 shadow-[8px_8px_0_var(--border)] sm:p-12">
             <p className="max-w-2xl text-2xl leading-tight font-black uppercase sm:text-3xl">
               Got an idea, project, or just want to say hello?
             </p>
@@ -35,7 +32,6 @@ export function Contact() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              {/* EMAIL */}
               <Link
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=arief.rahman0123@gmail.com"
                 target="_blank"
@@ -46,7 +42,6 @@ export function Contact() {
                 <span>↗</span>
               </Link>
 
-              {/* WHATSAPP */}
               <Link
                 href="https://wa.me/6282291570604?text=Hi%20Arip!%20I%20found%20your%20portfolio."
                 target="_blank"
@@ -54,13 +49,12 @@ export function Contact() {
                 className="inline-flex items-center gap-3 border-[3px] border-black bg-[#25D366] px-6 py-4 font-mono text-sm font-black text-black shadow-[5px_5px_0_#000] transition-all duration-150 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[1px_1px_0_#000]"
               >
                 <FaWhatsapp size={24} />
-                Let&apos;s talk ↗{/* <span>↗</span> */}
+                Let&apos;s talk ↗
               </Link>
             </div>
           </div>
 
-          {/* SOCIAL LINKS */}
-          <div className="border-[3px] text-black border-black bg-chart-2 p-8 shadow-[8px_8px_0_#000]">
+          <div className="border-[3px] text-black border-black bg-chart-2 p-8 shadow-[8px_8px_0_var(--border)]">
             <p className="mb-6 font-mono text-sm font-black">FIND ME ONLINE</p>
 
             <div className="flex flex-col gap-3">
@@ -109,7 +103,6 @@ export function Contact() {
           </div>
         </div>
 
-        {/* FOOTER TEXT */}
         <div className="mt-16 flex flex-col justify-between gap-4 border-t-[3px]  pt-6 font-mono text-xs font-bold sm:flex-row">
           <span>ARIEF RAHMAN HAKIM © 2026</span>
           <span>BUILT WITH NEXT.JS + TAILWIND CSS</span>

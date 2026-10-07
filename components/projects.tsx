@@ -35,7 +35,6 @@ const projects = [
 export function Projects() {
   const [api, setApi] = useState<CarouselApi>()
 
-  // Auto-slide setiap 5 detik
   useEffect(() => {
     if (!api) return
 
@@ -54,7 +53,7 @@ export function Projects() {
     <section id="projects" className="relative px-6 py-12">
       <div className="mx-auto w-full max-w-7xl">
         <div className="mb-12">
-          <div className="mb-6 inline-flex border-2 border-black bg-chart-2 px-4 py-2 text-black font-mono text-sm font-bold shadow-[4px_4px_0_#000]">
+          <div className="mb-6 inline-flex border-2 border-black bg-chart-2 px-4 py-2 text-black font-mono text-sm font-bold shadow-[4px_4px_0_var(--border)]">
             #03-PROJECTS
           </div>
 
@@ -65,8 +64,7 @@ export function Projects() {
           </h2>
         </div>
 
-        {/* PROJECT CAROUSEL */}
-        <div className="relative  w-full">
+        <div className="relative w-full">
           <Carousel
             setApi={setApi}
             opts={{
@@ -77,38 +75,35 @@ export function Projects() {
             <CarouselContent>
               {projects.map((project) => (
                 <CarouselItem key={project.number}>
-                  <div className="relative  px-2 pb-2">
+                  <div className="relative px-2 pb-2">
                     <ImageCard
                       imageUrl={project.imageUrl}
-                      className="rounded-none border-[3px] border-black shadow-[8px_8px_0_#000]"
+                      className="rounded-none border-[3px] border-black shadow-[12px_12px_0_var(--border)]"
                       caption={
                         <div>
-                          {/* TITLE */}
                           <div className="flex items-start gap-4">
                             <span
-                                className="text-black border-2 border-black bg-chart-2 px-3 py-1 font-mono text-lg font-bold shadow-[2px_2px_0_#000]"
+                                className="text-black border-2 border-black bg-chart-2 px-3 py-1 font-mono text-lg font-bold shadow-[2px_2px_0_var(--border)]"
                               >
                               #{project.number} - {project.title}
                               </span>
                           </div>
 
-                          {/* TAGS */}
                           <div className="mt-4 flex flex-wrap gap-2">
                             {project.tags.map((tag) => (
                               <span
                                 key={tag}
-                                className="inline-flex text-black items-center border-2 border-black bg-chart-2 px-3 py-1 font-mono text-xs font-bold shadow-[2px_2px_0_#000]"
+                                className="inline-flex text-black items-center border-2 border-black bg-chart-2 px-3 py-1 font-mono text-xs font-bold shadow-[2px_2px_0_var(--border)]"
                               >
                                 {tag}
                               </span>
                             ))}
 
-                            {/* BUTTON */}
                             <a
                               href={project.link}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center gap-2 border-2 border-black bg-chart-4 px-4 py-2 font-mono text-xs font-black text-white shadow-[3px_3px_0_#000] transition-all duration-150 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_1px_0_#000]"
+                              className="inline-flex items-center gap-2 border-2 border-black bg-chart-4 px-4 py-2 font-mono text-xs font-black text-white shadow-[3px_3px_0_var(--border)] transition-all duration-150 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_1px_0_var(--border)]"
                             >
                               VIEW PROJECT
                               <ArrowUpRight size={16} strokeWidth={3} />
@@ -117,7 +112,7 @@ export function Projects() {
                               href={project.repo}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center gap-2 border-2 border-black bg-chart-4 px-4 py-2 font-mono text-xs font-black text-white shadow-[3px_3px_0_#000] transition-all duration-150 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_1px_0_#000]"
+                              className="inline-flex items-center gap-2 border-2 border-black bg-chart-4 px-4 py-2 font-mono text-xs font-black text-white shadow-[3px_3px_0_var(--border)] transition-all duration-150 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_1px_0_var(--border)]"
                             >
                               VIEW REPOSITORY
                               <ArrowUpRight size={16} strokeWidth={3} />

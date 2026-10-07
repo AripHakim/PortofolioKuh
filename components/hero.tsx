@@ -1,12 +1,9 @@
-// import logo from "logo.webp"
-import ImageCard from "@/components/ui/image-card"
-
 export function Hero() {
   return (
     <section id="home" className="relative flex min-h-svh w-full min-w-0 items-center px-4 py-8 sm:px-6 sm:py-24 ">
-      <div className="mx-auto grid w-full max-w-7xl gap-8 items-center lg:grid-cols-[1.4fr_0.6fr] lg:items-center lg:gap-12">
+      <div className="mx-auto grid w-full max-w-7xl gap-8 lg:grid-cols-[1.4fr_0.6fr] lg:items-center lg:gap-12">
         <div>
-          <div className="mb-6 inline-flex border-2 border-black bg-chart-2 px-3 py-2 text-black font-mono text-xs font-bold shadow-[4px_4px_0_#000] sm:px-4 sm:text-sm">
+          <div className="mb-6 inline-flex border-2 border-black bg-chart-2 px-3 py-2 text-black font-mono text-xs font-bold shadow-[4px_4px_0_var(--border)] sm:px-4 sm:text-sm">
             WASSUP Y&apos;ALL
           </div>
 
@@ -23,17 +20,17 @@ export function Hero() {
             someday.
           </p>
 
-          <div className="mt-7 flex flex-wrap justify-center gap-3 sm:mt-8 sm:gap-4 lg:justify-start">
+          <div className="mt-7 flex flex-wrap  gap-3 sm:mt-8 sm:gap-4 lg:justify-start">
             <a
               href="#projects"
-              className="border-3 border-black bg-chart-4 px-5 py-3 text-sm font-black text-white shadow-[5px_5px_0_#000] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none sm:px-6 sm:text-base"
+              className="border-3 border-black bg-chart-4 px-5 py-3 text-sm font-black text-white shadow-[5px_5px_0_var(--border)] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none sm:px-6 sm:text-base"
             >
               VIEW MY WORK →
             </a>
 
             <a
               href="#contact"
-              className="border-3 border-black bg-white px-5 py-3 text-sm font-black text-black shadow-[5px_5px_0_#000] transition-all hover:translate-x-1 hover:translate-y-1 hover:bg-[#F7BF18] hover:shadow-none sm:px-6 sm:text-base"
+              className="border-3 border-black bg-white px-5 py-3 text-sm font-black text-black shadow-[5px_5px_0_var(--border)] transition-all hover:translate-x-1 hover:translate-y-1 hover:bg-[#F7BF18] hover:shadow-none sm:px-6 sm:text-base"
             >
               LET&apos;S TALK
             </a>
@@ -41,7 +38,7 @@ export function Hero() {
         </div>
 
         <div className="relative mx-auto mt-2 w-full min-w-0 max-w-[360px] sm:max-w-sm lg:mt-0">
-          <div className="aspect-square w-full border-4 border-black bg-chart-2 shadow-[8px_8px_0_#000] sm:shadow-[10px_10px_0_#000]">
+          <div className="aspect-square w-full border-4 border-black bg-chart-2 shadow-[8px_8px_0_var(--border)] sm:shadow-[10px_10px_0_var(--border)]">
             <div className="flex h-full items-center justify-center p-6 sm:p-8">
               <span className="text-center text-5xl leading-none font-black text-black uppercase sm:text-6xl">
                 ARIEF RAHMAN
